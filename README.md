@@ -1,27 +1,41 @@
-# ScalableAngular
+# NgColombia - Scalable Architecture
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+## [Slides](https://slides.com/jdjuan/scalable-workshop#/)
 
-## Development server
+## Difficulty: Development 😊
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Step 1
 
-## Code scaffolding
+Instead of fetching the photo on page reload, fetch the photo once the users clicks a button. Name the button `Ask me`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Step 2
 
-## Build
+The current `Observable` is of type `any`. Create an `interface` to type the HTTP Response
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Step 3
 
-## Running unit tests
+Instead of fetching the information from the component, fetch the info from a service
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Step 4
 
-## Running end-to-end tests
+Create a module that holds all the functionality related
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Step 5
 
-## Further help
+Replace the button with one from Angular Material
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+---
+
+## Difficulty: Production 👿
+
+Create a Trivia App of `Yes or No` questions, where the actual answer is shown with a `gif`
+
+- The user sees the question
+- And five seconds later the answer is shown with a correspondant `gif`
+
+### Setup
+
+- Setup your question API here: https://opentdb.com/api_config.php
+  - Use `General Knowledge` as the category
+  - Use `easy` as the difficulty
+  - Use `True/False` as the Type
