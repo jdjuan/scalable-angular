@@ -6,7 +6,7 @@
 
 ### Step 1
 
-Instead of fetching the photo on page reload, fetch the photo once the users clicks a button. Name the button `Ask me`
+Fetch the photo once the users clicks a button. Name the button `Ask me`
 
 ### Step 2
 
