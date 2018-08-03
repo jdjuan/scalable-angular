@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+input {
+  font-size: 4rem;
+}

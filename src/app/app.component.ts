@@ -10,7 +10,10 @@ import { Observable } from 'rxjs';
 export class AppComponent {
   data$: Observable<any>;
 
-  constructor(private http: HttpClient) {
-    this.data$ = http.get('https://yesno.wtf/api');
+  constructor(private http: HttpClient) {}
+
+  fetchImage(input: HTMLInputElement) {
+    input.value = null;
+    this.data$ = this.http.get('https://yesno.wtf/api');
   }
 }

@@ -1,3 +1,7 @@
-<img src="{{(data$ | async)?.image}}"
-     width="600px"
+<input type="text"
+       (keydown.enter)="fetchImage($event.target)">
+
+<img width="600px"
+     *ngIf="(data$ | async) as data"
+     src="{{data?.image}}"
      alt="">
